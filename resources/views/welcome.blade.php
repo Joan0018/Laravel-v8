@@ -75,7 +75,8 @@
                 <div class="title m-b-md">
                     Hello {{ auth()->user()->name ?? ''}}
                 </div>
-
+                    {!! "<b>Hello</b>" !!}
+                    {!! "<script>alert('Hello');</script>" !!}
                 <div class="links">
                     <a href="https://laravel.com/docs">Docs</a>
                     <a href="https://laracasts.com">Laracasts</a>
