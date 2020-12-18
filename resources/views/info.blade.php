@@ -1,11 +1,13 @@
 @extends('layouts.app')
 
+@section('page_description')
+@section('page_title', 'About this project')
 @section('content')
     <div class="container">
         <div class="row justify-content-center">
             <div class="col-md-8">
                 <div class="card">
-                    <div class="card-header">Starting Page</div>
+                    <div class="card-header">Info</div>
 
                     <div class="card-body">
                         If I paint something, I don't want to have to explain what it is. I'll go over the colors one more time that we use: Titanium white, Thalo green, Prussian blue, Van Dyke brown, Alizarin crimson, Sap green, Cad yellow, and Permanent red. You can do anything here. So don't worry about it. If what you're doing doesn't make you happy - you're doing the wrong thing. That's crazy.
@@ -25,4 +27,3 @@
         </div>
     </div>
 @endsection
-
