@@ -26,7 +26,7 @@ class RouteServiceProvider extends ServiceProvider
      *
      * @var string|null
      */
-    // protected $namespace = 'App\\Http\\Controllers';
+    protected $namespace = 'App\Http\Controllers';
 
     /**
      * Define your route model bindings, pattern filters, etc.
@@ -60,4 +60,6 @@ class RouteServiceProvider extends ServiceProvider
             return Limit::perMinute(60)->by(optional($request->user())->id ?: $request->ip());
         });
     }
+
+
 }

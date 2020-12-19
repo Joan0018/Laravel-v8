@@ -2,13 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="aa8b8d91-2183-4e75-b713-360c4d11d53e" name="Default Changelist" comment="Update UI">
-      <change afterPath="$PROJECT_DIR$/resources/views/info.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/css/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/app.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/sass/custom.scss" beforeDir="false" afterPath="$PROJECT_DIR$/resources/sass/custom.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/starting_page.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/starting_page.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/welcome.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Providers/RouteServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Providers/RouteServiceProvider.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -180,7 +175,8 @@
       <option name="presentableId" value="Default" />
       <updated>1608210641395</updated>
       <workItem from="1608210646093" duration="1471000" />
-      <workItem from="1608259615506" duration="4670000" />
+      <workItem from="1608259615506" duration="6989000" />
+      <workItem from="1608346404013" duration="202000" />
     </task>
     <task id="LOCAL-00001" summary="Update UI">
       <created>1608211664529</created>
@@ -189,7 +185,14 @@
       <option name="project" value="LOCAL" />
       <updated>1608211664529</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Backend">
+      <created>1608280129516</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1608280129516</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -209,6 +212,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Update UI" />
-    <option name="LAST_COMMIT_MESSAGE" value="Update UI" />
+    <MESSAGE value="Backend" />
+    <option name="LAST_COMMIT_MESSAGE" value="Backend" />
   </component>
 </project>
