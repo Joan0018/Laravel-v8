@@ -2,17 +2,17 @@
 
 namespace Database\Factories;
 
-use App\Models\Hobby;
+use App\Models\Test;
 use Illuminate\Database\Eloquent\Factories\Factory;
 
-class HobbyFactory extends Factory
+class TestFactory extends Factory
 {
     /**
      * The name of the factory's corresponding model.
      *
      * @var string
      */
-    protected $model = Hobby::class;
+    protected $model = Test::class;
 
     /**
      * Define the model's default state.
@@ -22,8 +22,7 @@ class HobbyFactory extends Factory
     public function definition()
     {
         return [
-            'name' => $this->faker->realText(30),
-            'description' => $this->faker->realText(),
+            //
         ];
     }
 }

@@ -2,10 +2,10 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Hobby;
+use App\Models\Tag;
 use Illuminate\Http\Request;
 
-class HobbyController extends Controller
+class TagController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -14,10 +14,10 @@ class HobbyController extends Controller
      */
     public function index()
     {
-        $hobbies = Hobby::all();
+        $tags = Tag::all();
 
-        return view('hobby.index')->with([
-            'hobbies' => $hobbies
+        return view('tag.index')->with([
+            'tags' => $tags
         ]);
     }
 
@@ -28,7 +28,7 @@ class HobbyController extends Controller
      */
     public function create()
     {
-        return view('hobby.create');
+        return view('tag.create');
     }
 
     /**
@@ -40,43 +40,43 @@ class HobbyController extends Controller
     public function store(Request $request)
     {
         $request->validate([
-            'name' => 'required|min:3',
-            'description' => 'required|min:5',
+            'name' => 'required',
+            'style' => 'required',
         ]);
 
-        $hobby = new Hobby([
+        $tag = new Tag([
             'name' => $request['name'],
-            'description' => $request['description'],
+            'style' => $request['style'],
         ]);
-        $hobby->save();
+
+        $tag->save();
+
         return $this->index()->with([
-            'message_success' => 'The hobby  <b>' .  $hobby->name . "</b> was created."
+            'message_success' => 'The tag  <b>' .  $tag->name . "</b> was created."
         ]);
     }
 
     /**
      * Display the specified resource.
      *
-     * @param  \App\Models\Hobby  $hobby
+     * @param  \App\Models\Tag  $tag
      * @return \Illuminate\Http\Response
      */
-    public function show(Hobby $hobby)
+    public function show(Tag $tag)
     {
-        return view('hobby.show')->with([
-            'hobby' => $hobby
-        ]);
+        //
     }
 
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\Models\Hobby  $hobby
+     * @param  \App\Models\Tag  $tag
      * @return \Illuminate\Http\Response
      */
-    public function edit(Hobby $hobby)
+    public function edit(Tag $tag)
     {
-        return view('hobby.edit')->with([
-            'hobby' => $hobby
+        return view('tag.edit')->with([
+            'tag' => $tag
         ]);
     }
 
@@ -84,39 +84,39 @@ class HobbyController extends Controller
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Models\Hobby  $hobby
+     * @param  \App\Models\Tag  $tag
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Hobby $hobby)
+    public function update(Request $request, Tag $tag)
     {
         $request->validate([
-            'name' => 'required|min:3',
-            'description' => 'required|min:5',
+            'name' => 'required',
+            'style' => 'required',
         ]);
 
-        $hobby->update([
+        $tag->update([
             'name' => $request['name'],
-            'description' => $request['description'],
+            'style' => $request['style'],
         ]);
 
         return $this->index()->with([
-            'message_success' => 'The hobby  <b>' .  $hobby->name . "</b> was updated."
+            'message_success' => 'The tag  <b>' .  $tag->name . "</b> was updated."
         ]);
     }
 
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Models\Hobby  $hobby
+     * @param  \App\Models\Tag  $tag
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Hobby $hobby)
+    public function destroy(Tag $tag)
     {
-        $oldName = $hobby->name;
-        $hobby->delete();
+        $oldName = $tag->name;
+        $tag->delete();
 
         return $this->index()->with([
-            'message_success' => 'The hobby  <b>' .  $oldName . "</b> was deleted."
+            'message_success' => 'The tag  <b>' .  $oldName . "</b> was deleted."
         ]);
     }
 }
