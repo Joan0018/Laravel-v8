@@ -2,36 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="aa8b8d91-2183-4e75-b713-360c4d11d53e" name="Default Changelist" comment="Update UI">
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/UserController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/hobbyTagController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/errors/401.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/errors/403.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/errors/404.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/errors/419.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/errors/429.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/errors/500.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/errors/503.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/errors/illustrated-layout.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/errors/layout.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/errors/minimal.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/user/show.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/MyHobbies.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/MyHobbies.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/HobbyController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/HobbyController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/Hobby.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Hobby.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/Tag.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Tag.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/User.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Providers/AppServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Providers/AppServiceProvider.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/hobby/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/hobby/index.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/hobby/show.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/hobby/show.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/home.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/tag/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/tag/index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/user/show.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/user/show.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -216,6 +192,7 @@
       <workItem from="1608346404013" duration="13171000" />
       <workItem from="1608612209769" duration="2155000" />
       <workItem from="1608699990126" duration="15363000" />
+      <workItem from="1608786833045" duration="1602000" />
     </task>
     <task id="LOCAL-00001" summary="Update UI">
       <created>1608211664529</created>
@@ -252,7 +229,21 @@
       <option name="project" value="LOCAL" />
       <updated>1608703744808</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Update">
+      <created>1608786865879</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1608786865879</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Update">
+      <created>1608786881906</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1608786881906</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -274,9 +265,9 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="Update UI" />
     <MESSAGE value="Backend" />
-    <MESSAGE value="Update" />
     <MESSAGE value="Create" />
     <MESSAGE value="Update 23 DEC" />
-    <option name="LAST_COMMIT_MESSAGE" value="Update 23 DEC" />
+    <MESSAGE value="Update" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update" />
   </component>
 </project>
