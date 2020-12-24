@@ -18,5 +18,6 @@ class DatabaseSeeder extends Seeder
 
         $this->call(\Database\Seeders\TagSeeder::class);
         $this->call(UserSeeder::class);
+        $this->call(AdminSeeder::class);
     }
 }

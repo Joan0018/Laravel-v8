@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\Hobby;
+use Illuminate\Support\Facades\Session;
 
 class HomeController extends Controller
 {
@@ -30,7 +31,8 @@ class HomeController extends Controller
             ->get();
 
         return view('home')->with([
-            'hobbies' => $hobbies
+            'hobbies' => $hobbies,
+            'message_success' => Session::get('message_success')
         ]);
     }
 }

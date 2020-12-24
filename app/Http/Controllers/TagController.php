@@ -4,9 +4,16 @@ namespace App\Http\Controllers;
 
 use App\Models\Tag;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Gate;
 
 class TagController extends Controller
 {
+    public function __construct()
+    {
+        $this->middleware('auth')->except(['index']);
+        $this->middleware('admin')->except(['index']);
+    }
+
     /**
      * Display a listing of the resource.
      *
@@ -75,6 +82,8 @@ class TagController extends Controller
      */
     public function edit(Tag $tag)
     {
+        abort_unless(Gate::allows('update', $tag), 403);
+
         return view('tag.edit')->with([
             'tag' => $tag
         ]);
@@ -89,6 +98,9 @@ class TagController extends Controller
      */
     public function update(Request $request, Tag $tag)
     {
+        abort_unless(Gate::allows('update', $tag), 403);
+
+
         $request->validate([
             'name' => 'required',
             'style' => 'required',
@@ -112,6 +124,8 @@ class TagController extends Controller
      */
     public function destroy(Tag $tag)
     {
+        abort_unless(Gate::allows('delete', $tag), 403);
+
         $oldName = $tag->name;
         $tag->delete();
 
